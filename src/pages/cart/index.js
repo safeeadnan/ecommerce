@@ -21,14 +21,14 @@ const Cart = () => {
     useEffect(() => {
         if (context.isLogin !== "true") {
             history('/');
-        } 
-       
+        }
+
 
         context.setCartItems(context.cartItems)
 
     }, [])
 
-    
+
 
 
     const deleteItem = async (id) => {
